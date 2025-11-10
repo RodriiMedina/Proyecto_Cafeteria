@@ -1,5 +1,4 @@
-#ifndef PRODUCTO_H
-#define PRODUCTO_H
+#pragma once
 
 
 class Producto
@@ -11,5 +10,3 @@ class Producto
 
     private:
 };
-
-#endif // PRODUCTO_H

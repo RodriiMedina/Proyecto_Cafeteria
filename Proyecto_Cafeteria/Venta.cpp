@@ -2,5 +2,5 @@
 
 Venta::Venta()
 {
-    //ctor
+
 }

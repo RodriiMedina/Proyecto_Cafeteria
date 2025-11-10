@@ -1,16 +1,13 @@
-#ifndef PROVEEDOR_H
-#define PROVEEDOR_H
-
+#pragma once
 
 class Proveedor
 {
     public:
         Proveedor();
-        ~Proveedor();
+
 
     protected:
 
     private:
 };
 
-#endif // PROVEEDOR_H

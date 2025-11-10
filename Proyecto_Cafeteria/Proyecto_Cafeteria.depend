@@ -2,18 +2,38 @@
 1762788856 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\cliente.cpp
 	"Cliente.h"
 
-1762788856 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\cliente.h
+1762791065 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\cliente.h
 
-1762788856 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\main.cpp
+1762791065 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\main.cpp
 	<iostream>
 
 1762788856 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\producto.cpp
 	"Producto.h"
 
-1762788856 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\producto.h
+1762791065 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\producto.h
 
-1762788856 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\proveedor.cpp
+1762790351 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\proveedor.cpp
 	"Proveedor.h"
 
-1762788845 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\proveedor.h
+1762791065 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\proveedor.h
+
+1762790351 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\venta.cpp
+	"Venta.h"
+
+1762791065 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\venta.h
+
+1762791065 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorclientes.cpp
+	"gestorclientes.h"
+
+1762791248 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorclientes.h
+
+1762791065 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorproductos.cpp
+	"GestorProductos.h"
+
+1762791065 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorproductos.h
+
+1762791065 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorproveedores.cpp
+	"gestorproveedores.h"
+
+1762791065 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorproveedores.h
 

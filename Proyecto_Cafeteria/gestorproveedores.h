@@ -1,10 +1,9 @@
 #pragma once
 
-
-class Cliente
+class GestorProveedores
 {
     public:
-        Cliente();
+        GestorProveedores();
 
     protected:
 
