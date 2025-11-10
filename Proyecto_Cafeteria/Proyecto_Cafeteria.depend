@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1762788856 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\cliente.cpp
+	"Cliente.h"
+
+1762788856 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\cliente.h
+
+1762788856 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\main.cpp
+	<iostream>
+
+1762788856 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\producto.cpp
+	"Producto.h"
+
+1762788856 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\producto.h
+
+1762788856 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\proveedor.cpp
+	"Proveedor.h"
+
+1762788845 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\proveedor.h
+
