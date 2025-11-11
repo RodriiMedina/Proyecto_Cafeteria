@@ -62,13 +62,14 @@
 
 1762799691 c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\gestorventas.h
 
-1762805608 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\producto.cpp
+1762875282 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\producto.cpp
 	"Producto.h"
 	<iostream>
 	<cstring>
 
-1762805786 c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\producto.h
+1762874885 c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\producto.h
 
-1762801444 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\main.cpp
+1762875170 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\main.cpp
 	<iostream>
+	"Producto.h"
 

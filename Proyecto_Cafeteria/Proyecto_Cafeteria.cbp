@@ -32,6 +32,18 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Cliente.cpp" />
+		<Unit filename="Cliente.h" />
+		<Unit filename="GestorProductos.cpp" />
+		<Unit filename="GestorProductos.h" />
+		<Unit filename="Producto.cpp" />
+		<Unit filename="Producto.h" />
+		<Unit filename="gestorclientes.cpp" />
+		<Unit filename="gestorclientes.h" />
+		<Unit filename="gestorproveedores.cpp" />
+		<Unit filename="gestorproveedores.h" />
+		<Unit filename="gestorventas.cpp" />
+		<Unit filename="gestorventas.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

@@ -7,17 +7,25 @@ class Producto
     Producto(int idProducto, const char* nombre, bool categoria, float precio, int stock);
     void setPrecio(float precio);
     void setNombre(const char* nombre);
-    bool setCategoria(bool categoria);
+    void setCategoria(bool categoria);
+    void setId(int idProducto);
+    void setStock(int stock);
 
-    protected:
+        int getId() const {return idProducto;}
+        int getStock()const {return stock;}
+const char* getNombre() const {return nombre;}
+       bool getCategoria()const {return categoria;}
+      float getPrecio()const {return precio;}
+
+    void mostrarProducto();
 
     private:
     static const int maxNombre=20;
 
-       const int idProducto=0;
-       char nombre[maxNombre]="0/";
+        int idProducto;
+       char nombre[maxNombre];
        bool categoria;
-       float precio=0.0;
-       int stock=0;
+       float precio;
+       int stock;
 
 };

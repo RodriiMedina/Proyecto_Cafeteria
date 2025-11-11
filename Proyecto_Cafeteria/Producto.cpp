@@ -3,18 +3,42 @@
 #include <cstring>
 
 Producto::Producto(int idProducto, const char* nombre, bool categoria, float precio, int stock)
+: idProducto(0), categoria(categoria), precio(0.0f), stock(0)
 {
-    /*
-    this->setId(idProducto);
-    this->setCategoria(categoria);
-    this->setStock(stock);
-    */
 
+    this->setId(idProducto);
+    this->setStock(stock);
     this->setNombre(nombre);
+    this->setCategoria(categoria);
     this->setPrecio(precio);
 
 }
 
+void Producto::mostrarProducto(){
+     std::cout<< "ID: " << idProducto<< std::endl;
+     std::cout<< " | Nombre: " << nombre<< std::endl;
+
+     if(categoria){
+        std::cout<<" | Categoria: Bebida"<< std::endl;
+
+     }else  std::cout<<" | Categoria: Comida"<< std::endl;
+
+
+     std::cout<< " | Precio: " << precio<< std::endl;
+     std::cout<< " | Stock: " << stock << std::endl;
+
+}
+
+void Producto::setId(int idProducto){
+    if(idProducto>0){
+    this->idProducto = idProducto;}
+}
+
+void Producto::setStock(int stock){
+    if(stock>0){
+        this->stock = stock;
+    }else std::cout<<"El stock no puede ser negativo"<<std::endl;
+}
 
 void Producto::setPrecio(float precio){
     if(precio>0.0){
@@ -33,6 +57,6 @@ void Producto::setNombre(const char* nombre){
     }
 }
 
-bool Producto::setCategoria(bool categoria){
+void Producto::setCategoria(bool categoria){
     this->categoria=categoria;
 }
