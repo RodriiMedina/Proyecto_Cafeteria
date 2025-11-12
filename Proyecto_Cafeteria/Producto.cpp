@@ -2,6 +2,14 @@
 #include <iostream>
 #include <cstring>
 
+
+
+Producto::Producto():idProducto(0), categoria(false), precio(0.0f), stock(0){
+
+    this->nombre[0] = '\0';
+
+}
+
 Producto::Producto(int idProducto, const char* nombre, bool categoria, float precio, int stock)
 : idProducto(0), categoria(categoria), precio(0.0f), stock(0)
 {
