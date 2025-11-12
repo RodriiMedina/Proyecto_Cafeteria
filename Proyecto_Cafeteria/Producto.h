@@ -4,13 +4,17 @@
 class Producto
 {
     public:
+    Producto();
     Producto(int idProducto, const char* nombre, bool categoria, float precio, int stock);
+
+    //setters
     void setPrecio(float precio);
     void setNombre(const char* nombre);
     void setCategoria(bool categoria);
     void setId(int idProducto);
     void setStock(int stock);
 
+    //gatters
         int getId() const {return idProducto;}
         int getStock()const {return stock;}
 const char* getNombre() const {return nombre;}
