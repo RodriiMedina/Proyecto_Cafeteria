@@ -10,18 +10,20 @@ public:
 
      GestorProductos();
 
-    void mostrarMenu();
     void listarProductos();
     void agregarProducto();
 
-    //Producto* buscarIdProducto(int id);
-    //void venderProducto();
+    int buscarProducto(int idProducto);
+    void eliminarProducto();
 
-
-
+    /*a implementar
+    bool existeProducto(int id) const;
+    bool guardarEnArchivo();
+    bool cargarDesdeArchivo();*/
 
 private:
 
     Producto productos[10];
-    int cantidad;
+    int cantidad=5;
+    int idEliminar;
 };

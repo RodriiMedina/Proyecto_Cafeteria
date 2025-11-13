@@ -4,17 +4,18 @@
 
 1762791065 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\cliente.h
 
-1762919518 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\main.cpp
+1763071756 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\main.cpp
 	<iostream>
 	"Producto.h"
+	"GestorProductos.h"
 	"Venta.h"
 
-1762899316 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\producto.cpp
+1763057625 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\producto.cpp
 	"Producto.h"
+
+1763062563 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\producto.h
 	<iostream>
 	<cstring>
-
-1762916468 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\producto.h
 
 1762790351 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\proveedor.cpp
 	"Proveedor.h"
@@ -33,11 +34,13 @@
 
 1762791248 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorclientes.h
 
-1762917040 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorproductos.cpp
+1763071756 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorproductos.cpp
+	"GestorProductos.h"
 
-1762916861 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorproductos.h
+1763071205 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorproductos.h
 	"Producto.h"
-	<cstdio>
+	"Venta.h"
+	<iostream>
 
 1762791065 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorproveedores.cpp
 	"gestorproveedores.h"

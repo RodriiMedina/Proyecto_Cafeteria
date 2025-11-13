@@ -18,7 +18,7 @@ using namespace std;
     void GestorProductos::listarProductos(){
 
 
-        for(int i= 0 ; i<=cantidad;i++){
+        for(int i= 0 ; i<cantidad;i++){
 
             productos[i].mostrarProducto();
             std::cout<<"_________________________"<<std::endl;
@@ -26,7 +26,7 @@ using namespace std;
     }
 
     void GestorProductos::agregarProducto(){
-    //validar si hay espacio en stock
+    //falta validar si hay espacio en stock
 
     int idProducto;
     char nombre[20];
@@ -55,3 +55,29 @@ using namespace std;
 
 
     }
+
+    int GestorProductos::buscarProducto(int idProducto) {
+
+    for (int i=0; i<cantidad; i++){
+        if(productos[i].getId() == idProducto) {
+        cout<<"el producto buscado es: ";
+        productos[i].mostrarProducto();
+            return i;
+  }
+ }
+ return -1;
+}
+
+    void GestorProductos::eliminarProducto(){
+
+    cout<<"Ingrese el ID del producto a eliminar"<<endl;
+    cin>>idEliminar;
+        int indice=buscarProducto(idEliminar);
+    if(indice!=-1){
+        for (int i=indice; i<cantidad-1; i++) {
+            productos[i] = productos[i+1];
+     }
+        cantidad--;
+    }
+    }
+

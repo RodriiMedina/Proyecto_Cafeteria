@@ -16,7 +16,7 @@ class Producto
     void setId(int idProducto);
     void setStock(int stock);
 
-    //gatters
+    //getters
         int getId() const {return idProducto;}
         int getStock()const {return stock;}
 const char* getNombre() const {return nombre;}
@@ -33,5 +33,4 @@ const char* getNombre() const {return nombre;}
        bool categoria;
        float precio;
        int stock;
-
 };
