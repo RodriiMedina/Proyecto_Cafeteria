@@ -1,5 +1,8 @@
 #include "GestorProductos.h"
 
+using namespace std;
+
+
 
     GestorProductos::GestorProductos() {
 
@@ -14,11 +17,41 @@
 
     void GestorProductos::listarProductos(){
 
+
         for(int i= 0 ; i<=cantidad;i++){
 
             productos[i].mostrarProducto();
             std::cout<<"_________________________"<<std::endl;
         }
-
     }
 
+    void GestorProductos::agregarProducto(){
+    //validar si hay espacio en stock
+
+    int idProducto;
+    char nombre[20];
+    int verificador;
+    float precio;
+    int stock;
+
+    cout<<"Ingresa ID del producto: ";
+    cin>>idProducto;
+    cin.ignore();
+    cout<<"ingresa el nombre del producto: ";
+    cin.getline(nombre,20);
+    cout<<"ingrese el precio";
+    cin>>precio;
+    cout<<"igrese la cantidad de stock";
+    cin>>stock;
+    cout<<"ingrese 1 si es bebida o ingrese 2 si es alimento";
+    cin>>verificador;
+    bool categoria= (verificador==1);
+
+    Producto nuevoProducto(idProducto,nombre,categoria,precio,stock);
+
+    productos[cantidad]=nuevoProducto;
+    cantidad++;
+
+
+
+    }

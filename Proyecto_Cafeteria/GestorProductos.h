@@ -12,16 +12,16 @@ public:
 
     void mostrarMenu();
     void listarProductos();
+    void agregarProducto();
 
     //Producto* buscarIdProducto(int id);
-    void venderProducto();
+    //void venderProducto();
 
 
 
 
 private:
-    Producto productos[5];
+
+    Producto productos[10];
     int cantidad;
-
-
 };
