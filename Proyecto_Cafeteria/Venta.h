@@ -17,9 +17,7 @@ class Venta
     int getCantidadVendida()const;
     float getTotalVenta()const;
 
-        void mostrarVenta(const Producto& Producto)const;
-
-    protected:
+    void mostrarVenta(const Producto& Producto);
 
     private:
 

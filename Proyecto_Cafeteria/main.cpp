@@ -4,20 +4,11 @@
 #include "Venta.h"
 
 using namespace std;
-int main()
-{
+int main(){
 
-    GestorProductos miGestor;
 
-    miGestor.listarProductos();
+   Producto cafe(-4, "Cafe expreso", true, 1200.50, 30, 45);
+    cafe.mostrarProducto();
 
-    miGestor.agregarProducto();
-
-    miGestor.listarProductos();
-
-    miGestor.eliminarProducto();
-
-    miGestor.listarProductos();
-
-    return 0;
+return 0;
 }

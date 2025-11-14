@@ -1,11 +1,11 @@
 #include "Producto.h"
 
-Producto::Producto():idProducto(0), categoria(false), precio(0.0f), stock(0){
+Producto::Producto():idProducto(0), categoria(false), precio(0.0f), stock(0),tamanio(0){
     this->nombre[0] = '\0';
 }
 
-Producto::Producto(int idProducto, const char* nombre, bool categoria, float precio, int stock)
-: idProducto(0), categoria(categoria), precio(0.0f), stock(0)
+Producto::Producto(int idProducto, const char* nombre, bool categoria, float precio, int stock, int tamanio)
+: idProducto(0), categoria(categoria), precio(0.0f), stock(0), tamanio(tamanio)
 {
     this->setId(idProducto);
     this->setStock(stock);
@@ -15,22 +15,19 @@ Producto::Producto(int idProducto, const char* nombre, bool categoria, float pre
 }
 
 void Producto::mostrarProducto(){
+    const char* categoria_texto = this->categoria ? "Bebida" : "Alimento";
+
      std::cout<< "ID: " << idProducto<< std::endl;
      std::cout<< " | Nombre: " << nombre<< std::endl;
-
-     if(categoria){
-        std::cout<<" | Categoria: Bebida"<< std::endl;
-
-     }else  std::cout<<" | Categoria: Comida"<< std::endl;
-
-
+     std::cout<<" | Categoria: "<< categoria_texto<<std::endl;
      std::cout<< " | Precio: " << precio<< std::endl;
      std::cout<< " | Stock: " << stock << std::endl;
+     std::cout<< " | tamanio: " << tamanio << std::endl;
 
 }
 void Producto::setId(int idProducto){
     if(idProducto>0){
-    this->idProducto = idProducto;}
+    this->idProducto = idProducto;}else std::cout<<"Puede que el numero ID sea erroneo, le asignaremos un ID: 0"<<std::endl;
 }
 void Producto::setStock(int stock){
     if(stock>0){
@@ -53,5 +50,27 @@ void Producto::setNombre(const char* nombre){
     }
 }
 void Producto::setCategoria(bool categoria){
+    if(categoria){
     this->categoria=categoria;
+    std::cout<<"Bebida"<<std::endl;
+}else{
+    this->categoria=categoria;
+    std::cout<<"Alimento"<<std::endl;
+    }
 }
+/*void Producto::setTamanio(int tamanio){
+    switch(tamanio)
+    case 0:
+    this->tamanio=tamanio;
+    break;
+        case 1:
+        this->tamanio=tamanio;
+        break;
+            case 2:
+            this->tamanio=tamanio;
+            break;
+                case 3:
+                this->tamanio=tamanio;
+                break;
+}
+*/

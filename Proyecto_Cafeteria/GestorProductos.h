@@ -17,12 +17,10 @@ public:
     void eliminarProducto();
 
     /*a implementar
-    bool existeProducto(int id) const;
     bool guardarEnArchivo();
     bool cargarDesdeArchivo();*/
 
 private:
-
     Producto productos[10];
     int cantidad=5;
     int idEliminar;
