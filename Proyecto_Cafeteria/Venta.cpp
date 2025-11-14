@@ -22,10 +22,8 @@ float Venta::getTotalVenta()const {return totalVenta; }
 
 
 void Venta::mostrarVenta(const Producto& producto){
-    std::cout<<"++++++venta++++++"<<std::endl;
     std::cout<<"ID Venta: "<< idVenta<<std::endl;
     std::cout<<"ID Producto: "<< idProducto<<std::endl;
     std::cout<<"Cantidad vendida: "<< cantidadVendida<<std::endl;
     std::cout<<"Total vendido: "<< totalVenta<<std::endl;
-
 }

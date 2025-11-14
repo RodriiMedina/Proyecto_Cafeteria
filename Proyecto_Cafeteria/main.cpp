@@ -6,7 +6,6 @@
 using namespace std;
 int main(){
 
-
    Producto cafe(-4, "Cafe expreso", true, 1200.50, 30, 45);
     cafe.mostrarProducto();
 

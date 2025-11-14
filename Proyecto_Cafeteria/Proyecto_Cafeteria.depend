@@ -57,10 +57,10 @@
 
 1762799691 c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\gestorclientes.h
 
-1763047234 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\gestorproductos.cpp
+1763143464 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\gestorproductos.cpp
 	"GestorProductos.h"
 
-1763050567 c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\gestorproductos.h
+1763146908 c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\gestorproductos.h
 	"Producto.h"
 	"Venta.h"
 	<iostream>
@@ -75,14 +75,14 @@
 
 1762799691 c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\gestorventas.h
 
-1763049964 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\producto.cpp
+1763149668 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\producto.cpp
 	"Producto.h"
 
-1763047626 c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\producto.h
+1763143465 c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\producto.h
 	<iostream>
 	<cstring>
 
-1763047498 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\main.cpp
+1763146908 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\main.cpp
 	<iostream>
 	"Producto.h"
 	"GestorProductos.h"
@@ -93,7 +93,7 @@
 
 1762791248 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorventas.h
 
-1762962460 c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\venta.h
+1763143465 c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\venta.h
 	"Producto.h"
 
 1762799691 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\proveedor.cpp
@@ -101,7 +101,17 @@
 
 1762799691 c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\proveedor.h
 
-1762962460 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\venta.cpp
+1763146908 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\venta.cpp
 	"Venta.h"
 	<iostream>
+
+1763150344 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\persona.cpp
+	<iostream>
+	"Persona.h"
+
+1763149687 c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\persona.h
+
+1763149331 source:c:\users\rodri\onedrive\documentos\github\proyecto_cafeteria\proyecto_cafeteria\src\persona.cpp
+	<iostream>
+	"Persona.h"
 

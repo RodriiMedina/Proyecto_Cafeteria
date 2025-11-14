@@ -49,6 +49,7 @@ void Producto::setNombre(const char* nombre){
         std::cout<<"el nombre ingresado está vacio o es invalido"<<std::endl;
     }
 }
+
 void Producto::setCategoria(bool categoria){
     if(categoria){
     this->categoria=categoria;
