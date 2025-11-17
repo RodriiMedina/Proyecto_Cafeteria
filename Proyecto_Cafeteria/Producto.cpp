@@ -5,7 +5,7 @@ Producto::Producto():idProducto(0), categoria(false), precio(0.0f), stock(0),tam
 }
 
 Producto::Producto(int idProducto, const char* nombre, bool categoria, float precio, int stock, int tamanio, int estado)
-: idProducto(0), categoria(categoria), precio(0.0f), stock(0), tamanio(tamanio)
+: idProducto(0), categoria(categoria), precio(0.0f), stock(0), tamanio(tamanio), estado(estado)
 {
     this->setId(idProducto);
     this->setStock(stock);

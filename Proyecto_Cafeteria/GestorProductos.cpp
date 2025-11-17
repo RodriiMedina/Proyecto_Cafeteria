@@ -169,3 +169,42 @@ using namespace std;
       }
      }
     }
+
+    void GestorProductos::menuProductos(){
+    int opcion;
+    std::cout<<"_________________________"<<std::endl;
+    cout<<"Que desea hacer? "<<endl;
+
+    cout<<" 1 | Agregar Producto: "<<endl;
+    cout<<" 2 | Eliminar Producto: "<<endl;
+    cout<<" 3 | Buscar Producto: "<<endl;
+    cout<<" 4 | Listar Productos: "<<endl;
+    cout<<" 5 | Modificar Producto: "<<endl;
+    cin>>opcion;
+
+    switch(opcion){
+
+    case 0:
+        agregarProducto();
+        break;
+
+    case 1:
+        eliminarProducto();
+        break;
+
+    case 2:
+        buscarProducto(id);
+        break;
+
+    case 3:
+        listarProductos();
+        break;
+
+    case 4:
+        modificarProducto();
+        break;
+
+    default:
+        break;
+    };
+    }

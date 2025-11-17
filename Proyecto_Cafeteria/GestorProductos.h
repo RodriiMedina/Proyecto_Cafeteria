@@ -17,6 +17,7 @@ public:
     void modificarProducto();
     void eliminarProducto();
     void listarActivos();
+    void menuProductos();
 
 
     /*a implementar
