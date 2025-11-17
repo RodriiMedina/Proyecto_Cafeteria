@@ -27,5 +27,4 @@ void Venta::mostrarVenta(const Producto& producto) const{
     std::cout<<"ID Producto: "<< idProducto<<std::endl;
     std::cout<<"Cantidad vendida: "<< cantidadVendida<<std::endl;
     std::cout<<"Total vendido: "<< totalVenta<<std::endl;
-
 }

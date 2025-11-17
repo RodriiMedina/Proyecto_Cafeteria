@@ -1,11 +1,16 @@
-
 #pragma once
-class GestorClientes{
+#include "Cliente.h"
+#include <vector>
+
+class GestorClientes {
+private:
+    std::vector<Cliente> listaClientes;
+
 public:
-    void menuClientes();
-    void altaCliente(){}
-    void bajaCliente(){}
-    void modificarCliente(){}
-    void listarClientes(){}
-    void buscarClientePorID(){}
+    GestorClientes();
+    void agregarCliente(const Cliente& c);
+    Cliente* buscarClientePorID(int id);
+    void guardarClienteEnArchivo(const Cliente& c);
+    void cargarClientesDesdeArchivo();
+    void mostrarTodos() const;
 };

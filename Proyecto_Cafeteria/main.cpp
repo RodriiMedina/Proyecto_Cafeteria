@@ -37,7 +37,7 @@ int main() {
                 break;
 
             case 3:
-                gestorCli.menuClientes();
+               // gestorCli.menuClientes();
                 break;
 
             case 4:
