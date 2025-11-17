@@ -47,8 +47,6 @@ using namespace std;
     cout<<"ingrese 1 si es bebida o ingrese 2 si es alimento";
     cin>>verificador;
     bool categoria= (verificador==1);
-    cout<<"ingrese la cantidad de stock";
-    cin>>categoria;
     cout<<"ingrese el tamaño del producto";
     cin>>tamanio;
 
@@ -87,4 +85,72 @@ using namespace std;
      }
         cantidad--;
     }
+    }
+
+    void GestorProductos::modificarProducto(){
+
+    int id;
+    int opcion;
+
+    cout << "Ingrese el ID del producto al que desea modificar el precio: ";
+    cin >> id;
+    int indice= buscarProducto(id);
+    if (indice == -1) {cout << "Producto no encontrado."<<endl;}
+    else{
+    cout<<"¿Qué desea modificar?" << endl;
+    cout<<"1. Nombre" << endl;
+    cout<<"2. Precio" << endl;
+    cout<<"3. Stock" << endl;
+    cout<<"4. Categoria" << endl;
+    cout<<"5. Tamanio" << endl;
+    cout<<"Seleccione una opcion: ";
+    cin>> opcion;
+    cin.ignore();
+
+    switch(opcion) {
+
+        case 1:{
+            char nuevoNombre[20];
+            cout<<"Ingrese el nuevo nombre: ";
+            cin.getline(nuevoNombre, 20);
+            productos[indice].setNombre(nuevoNombre);
+            break;
+        }
+        case 2:{
+            float nuevoPrecio;
+            cout<<"Ingrese el nuevo precio: ";
+            cin>>nuevoPrecio;
+            productos[indice].setPrecio(nuevoPrecio);
+            break;
+        }
+        case 3:{
+            int nuevoStock;
+            cout<<"Ingrese el nuevo stock: ";
+            cin>>nuevoStock;
+            productos[indice].setStock(nuevoStock);
+            break;
+        }
+        case 4:{
+            int verificador;
+            cout<<"Ingrese 1 para Bebida, 0 para Alimento: ";
+            cin>>verificador;
+            productos[indice].setCategoria(verificador == 1);
+            break;
+        }
+        case 5:{
+            int nuevoTamanio;
+            cout<<"Ingrese el nuevo tamanio: ";
+            cin>>nuevoTamanio;
+            productos[indice].setTamanio(nuevoTamanio);
+            break;
+        }
+
+        default:
+            cout<<"Opcion invalida."<<endl;
+            break;
+    }
+    cout<<"Modificación realizada correctamente."<<endl;
+}
+
+
     }

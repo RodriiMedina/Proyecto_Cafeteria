@@ -59,19 +59,6 @@ void Producto::setCategoria(bool categoria){
     std::cout<<"Alimento"<<std::endl;
     }
 }
-/*void Producto::setTamanio(int tamanio){
-    switch(tamanio)
-    case 0:
-    this->tamanio=tamanio;
-    break;
-        case 1:
-        this->tamanio=tamanio;
-        break;
-            case 2:
-            this->tamanio=tamanio;
-            break;
-                case 3:
-                this->tamanio=tamanio;
-                break;
+void Producto::setTamanio(int tamanio) {
+    this->tamanio = tamanio;
 }
-*/

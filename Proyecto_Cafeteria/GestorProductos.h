@@ -14,7 +14,9 @@ public:
     void agregarProducto();
 
     int buscarProducto(int idProducto);
+    void modificarProducto();
     void eliminarProducto();
+
 
     /*a implementar
     bool guardarEnArchivo();
