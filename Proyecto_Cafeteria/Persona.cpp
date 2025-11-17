@@ -3,7 +3,8 @@
 
  Persona::Persona(){
 
-std::cout<<"Hola mundo"<<std::endl;
+std::cout<<"Hola mundo2"<<std::endl;
+
  }
 
 

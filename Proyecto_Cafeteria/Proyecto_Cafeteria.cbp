@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="../Proyecto_Cafeteria" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="../Proyecto_Cafeteria" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -36,6 +38,7 @@
 		<Unit filename="Cliente.h" />
 		<Unit filename="GestorProductos.cpp" />
 		<Unit filename="GestorProductos.h" />
+		<Unit filename="Persona.cpp" />
 		<Unit filename="Producto.cpp" />
 		<Unit filename="Producto.h" />
 		<Unit filename="Proveedor.cpp" />
@@ -47,6 +50,7 @@
 		<Unit filename="gestorventas.cpp" />
 		<Unit filename="gestorventas.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="persona.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
