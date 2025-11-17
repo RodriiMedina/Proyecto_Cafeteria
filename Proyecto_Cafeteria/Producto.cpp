@@ -1,10 +1,10 @@
 #include "Producto.h"
 
-Producto::Producto():idProducto(0), categoria(false), precio(0.0f), stock(0),tamanio(0){
+Producto::Producto():idProducto(0), categoria(false), precio(0.0f), stock(0),tamanio(0),estado(estado){
     this->nombre[0] = '\0';
 }
 
-Producto::Producto(int idProducto, const char* nombre, bool categoria, float precio, int stock, int tamanio)
+Producto::Producto(int idProducto, const char* nombre, bool categoria, float precio, int stock, int tamanio, int estado)
 : idProducto(0), categoria(categoria), precio(0.0f), stock(0), tamanio(tamanio)
 {
     this->setId(idProducto);
@@ -23,6 +23,7 @@ void Producto::mostrarProducto(){
      std::cout<< " | Precio: " << precio<< std::endl;
      std::cout<< " | Stock: " << stock << std::endl;
      std::cout<< " | tamanio: " << tamanio << std::endl;
+     std::cout<< " | estado: " << estado << std::endl;
 
 }
 void Producto::setId(int idProducto){
@@ -61,4 +62,8 @@ void Producto::setCategoria(bool categoria){
 }
 void Producto::setTamanio(int tamanio) {
     this->tamanio = tamanio;
+}
+
+void Producto::setEstado(int estado){
+    this->estado = estado;
 }

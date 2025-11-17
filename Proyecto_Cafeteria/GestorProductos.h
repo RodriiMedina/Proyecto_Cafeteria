@@ -16,6 +16,7 @@ public:
     int buscarProducto(int idProducto);
     void modificarProducto();
     void eliminarProducto();
+    void listarActivos();
 
 
     /*a implementar

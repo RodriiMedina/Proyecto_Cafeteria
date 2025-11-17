@@ -7,19 +7,17 @@ using namespace std;
     GestorProductos::GestorProductos() {
 
     cantidad=5;
-    productos[0]= Producto(1,"Cafe Latte", true, 1500, 10,1);
-    productos[1]= Producto(2,"Capuccino", true, 800, 20,2);
-    productos[2]= Producto(3,"Tostado", false, 1200, 15,0);
-    productos[3]= Producto(4,"Jugo de Naranja", true, 1000, 12,3);
-    productos[4]= Producto(5,"Medialuna", false, 1600, 8,0);
+    productos[0]= Producto(1,"Cafe Latte", true, 1500, 10,1,true);
+    productos[1]= Producto(2,"Capuccino", true, 800, 20,2,true);
+    productos[2]= Producto(3,"Tostado", false, 1200, 15,0,true);
+    productos[3]= Producto(4,"Jugo de Naranja", true, 1000, 12,3,true);
+    productos[4]= Producto(5,"Medialuna", false, 1600, 8,0,true);
 
 }
 
     void GestorProductos::listarProductos(){
 
-
         for(int i= 0 ; i<cantidad;i++){
-
             productos[i].mostrarProducto();
             std::cout<<"_________________________"<<std::endl;
         }
@@ -34,6 +32,7 @@ using namespace std;
     float precio;
     int stock;
     int tamanio;
+    int estado;
 
     cout<<"Ingresa ID del producto: ";
     cin>>idProducto;
@@ -49,11 +48,13 @@ using namespace std;
     bool categoria= (verificador==1);
     cout<<"ingrese el tamaño del producto";
     cin>>tamanio;
+    cout<<"ingrese el estado del producto";
+    cin>>estado;
 
 
 
 
-    Producto nuevoProducto(idProducto,nombre,categoria,precio,stock,tamanio);
+    Producto nuevoProducto(idProducto,nombre,categoria,precio,stock,tamanio,estado);
 
     productos[cantidad]=nuevoProducto;
     cantidad++;
@@ -144,6 +145,13 @@ using namespace std;
             productos[indice].setTamanio(nuevoTamanio);
             break;
         }
+        case 6:{
+            int nuevoEstado;
+            cout<<"Ingrese el nuevo tamanio: ";
+            cin>>nuevoEstado;
+            productos[indice].setEstado(nuevoEstado);
+            break;
+        }
 
         default:
             cout<<"Opcion invalida."<<endl;
@@ -151,6 +159,13 @@ using namespace std;
     }
     cout<<"Modificación realizada correctamente."<<endl;
 }
+    }
 
-
+    void GestorProductos::listarActivos(){
+        for(int i= 0 ; i<cantidad;i++){
+                if(productos[i].getEstado()){
+                productos[i].mostrarProducto();
+                std::cout<<"_________________________"<<std::endl;
+      }
+     }
     }

@@ -13,10 +13,10 @@
 	"gestorclientes.h"
 	"gestorventas.h"
 
-1763354032 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\producto.cpp
+1763355354 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\producto.cpp
 	"Producto.h"
 
-1763350537 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\producto.h
+1763355354 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\producto.h
 	<iostream>
 	<cstring>
 
@@ -44,10 +44,10 @@
 	"Cliente.h"
 	<vector>
 
-1763353764 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorproductos.cpp
+1763356723 source:c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorproductos.cpp
 	"GestorProductos.h"
 
-1763353408 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorproductos.h
+1763356893 c:\users\rodri\documents\github\proyecto_cafeteria\proyecto_cafeteria\gestorproductos.h
 	"Producto.h"
 	"Venta.h"
 	<iostream>
