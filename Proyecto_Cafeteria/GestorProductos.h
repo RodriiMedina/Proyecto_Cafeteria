@@ -1,11 +1,27 @@
-
 #pragma once
+#include "Producto.h"
+#include "Venta.h"
+#include <iostream>
+
 class GestorProductos{
+
+
 public:
-    void menuProductos();
-    void agregarProducto(){}
-    void eliminarProducto(){}
-    void modificarProducto(){}
-    void listarProductos(){}
-    void buscarProductoPorID(){}
+
+     GestorProductos();
+
+    void listarProductos();
+    void agregarProducto();
+
+    int buscarProducto(int idProducto);
+    void eliminarProducto();
+
+    /*a implementar
+    bool guardarEnArchivo();
+    bool cargarDesdeArchivo();*/
+
+private:
+    Producto productos[10];
+    int cantidad=5;
+    int idEliminar;
 };

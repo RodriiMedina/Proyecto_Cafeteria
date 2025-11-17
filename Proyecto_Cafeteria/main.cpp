@@ -33,7 +33,7 @@ int main() {
                 break;
 
             case 2:
-                gestorProd.menuProductos();
+              //  gestorProd.menuProductos();
                 break;
 
             case 3:
